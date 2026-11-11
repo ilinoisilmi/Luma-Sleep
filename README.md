@@ -1,6 +1,6 @@
 # Luma Sleep
 
-An original native SwiftUI sleep diary and planner for **Ilmi's iPhone 14 Pro Max on iOS 27.2**, with a deployment target of **iOS 17.0**. No wearable, account, subscription or cloud service is needed for the core app.
+An original native SwiftUI sleep diary and planner for **iOS 27.2**, with a deployment target of **iOS 17.0**. No wearable, account, subscription or cloud service is needed for the core app.
 
 **Delivery status:** source project, generated Xcode project, assets, examples and tests. This is a development build candidate. The core Swift tests ran successfully on Linux; **the iOS targets have not been compiled, signed, run in Simulator, or tested on an iPhone** in this environment. There is no installable IPA in this package. Read `Docs/TEST_RESULTS.md` before relying on sensor or alarm behavior.
 

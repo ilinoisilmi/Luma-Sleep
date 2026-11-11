@@ -1,0 +1,66 @@
+name: Build Luma for iPhone
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: luma-ios-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: macos-26
+    timeout-minutes: 35
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+      - name: Get source
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Check Apple tools
+        run: |
+          set -euo pipefail
+          mkdir -p build/logs
+          xcodebuild -version | tee build/logs/xcode-version.txt
+          xcrun --sdk iphoneos --show-sdk-version | tee build/logs/iphone-sdk.txt
+          python3 - <<'PY'
+          from pathlib import Path
+          major = int(Path('build/logs/iphone-sdk.txt').read_text().strip().split('.')[0])
+          if major < 26:
+              raise SystemExit('This project needs an iPhoneOS SDK of 26 or newer.')
+          PY
+
+      - name: Check project and core logic
+        run: |
+          set -euo pipefail
+          python3 Scripts/audit_project.py | tee build/logs/project-audit.txt
+          python3 -m unittest discover -s Scripts -p 'test_package_ipa.py' 2>&1 | tee build/logs/packaging-tests.txt
+          swift test --package-path Core -j 1 -Xswiftc -disable-batch-mode 2>&1 | tee build/logs/core-tests.txt
+
+      - name: Build unsigned iPhone app
+        run: bash Scripts/build_unsigned_ipa.sh
+
+      - name: Download this artifact for Sideloadly
+        uses: actions/upload-artifact@v7
+        with:
+          name: LumaSleep-unsigned-ipa
+          path: build/export/
+          if-no-files-found: error
+          retention-days: 3
+          compression-level: 0
+
+      - name: Save build diagnostics
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: LumaSleep-build-logs
+          path: build/logs/
+          if-no-files-found: ignore
+          retention-days: 7

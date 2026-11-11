@@ -1,0 +1,119 @@
+[0/1] Planning build
+Building for debugging...
+[0/11] Write swift-version--5206EAF183B1FDE8.txt
+[1/11] Write sources
+[4/12] Emitting module LumaCore
+[5/13] Compiling LumaCore ImportExport.swift
+[6/14] Compiling LumaCore Persistence.swift
+[8/15] Emitting module LumaCoreTests
+[9/16] Compiling LumaCoreTests RegressionTests.swift
+[10/17] Wrapping AST for LumaCoreTests for debugging
+[11/17] /workspace/scratch/bdad0945f82d/LumaSleep/Core/.build/x86_64-unknown-linux-gnu/debug/LumaCorePackageDiscoveredTests.derived/all-discovered-tests.swift
+[12/18] Write sources
+[14/19] Emitting module LumaCorePackageDiscoveredTests
+[15/20] Compiling LumaCorePackageDiscoveredTests LumaCoreTests.swift
+[16/21] Compiling LumaCorePackageDiscoveredTests all-discovered-tests.swift
+[17/22] /workspace/scratch/bdad0945f82d/LumaSleep/Core/.build/x86_64-unknown-linux-gnu/debug/LumaCorePackageTests.derived/runner.swift
+[18/23] Wrapping AST for LumaCorePackageDiscoveredTests for debugging
+[19/23] Write sources
+[21/24] Emitting module LumaCorePackageTests
+[22/25] Compiling LumaCorePackageTests runner.swift
+[23/25] Write Objects.LinkFileList
+[24/25] Linking LumaCorePackageTests.xctest
+Build complete! (3.54s)
+Test Suite 'All tests' started at 2026-11-10 20:16:53.984
+Test Suite 'debug.xctest' started at 2026-11-10 20:16:53.985
+Test Suite 'LumaCoreTests' started at 2026-11-10 20:16:53.985
+Test Case 'LumaCoreTests.testAtomicStorageRoundTrip' started at 2026-11-10 20:16:53.985
+Test Case 'LumaCoreTests.testAtomicStorageRoundTrip' passed (0.004 seconds)
+Test Case 'LumaCoreTests.testBedtimeSurvivesSerializationAndEndIsNotSleep' started at 2026-11-10 20:16:53.988
+Test Case 'LumaCoreTests.testBedtimeSurvivesSerializationAndEndIsNotSleep' passed (0.005 seconds)
+Test Case 'LumaCoreTests.testCSVQuotedNewlineAndEscapedQuote' started at 2026-11-10 20:16:53.993
+Test Case 'LumaCoreTests.testCSVQuotedNewlineAndEscapedQuote' passed (0.0 seconds)
+Test Case 'LumaCoreTests.testCalendarDSTDayIsNotAssumed24Hours' started at 2026-11-10 20:16:53.994
+Test Case 'LumaCoreTests.testCalendarDSTDayIsNotAssumed24Hours' passed (0.001 seconds)
+Test Case 'LumaCoreTests.testChangedImportIDRejected' started at 2026-11-10 20:16:53.994
+Test Case 'LumaCoreTests.testChangedImportIDRejected' passed (0.002 seconds)
+Test Case 'LumaCoreTests.testCircularRegularityAcrossMidnight' started at 2026-11-10 20:16:53.996
+Test Case 'LumaCoreTests.testCircularRegularityAcrossMidnight' passed (0.001 seconds)
+Test Case 'LumaCoreTests.testCorrectionCanBeUndoneWithoutChangingOriginal' started at 2026-11-10 20:16:53.998
+Test Case 'LumaCoreTests.testCorrectionCanBeUndoneWithoutChangingOriginal' passed (0.102 seconds)
+Test Case 'LumaCoreTests.testDeletedHealthRecordExcluded' started at 2026-11-10 20:16:54.099
+Test Case 'LumaCoreTests.testDeletedHealthRecordExcluded' passed (0.001 seconds)
+Test Case 'LumaCoreTests.testDuplicateSessionStartRejected' started at 2026-11-10 20:16:54.100
+Test Case 'LumaCoreTests.testDuplicateSessionStartRejected' passed (0.1 seconds)
+Test Case 'LumaCoreTests.testEfficiencyRequiresBedEvidence' started at 2026-11-10 20:16:54.201
+Test Case 'LumaCoreTests.testEfficiencyRequiresBedEvidence' passed (0.002 seconds)
+Test Case 'LumaCoreTests.testEnergyRequiresData' started at 2026-11-10 20:16:54.202
+Test Case 'LumaCoreTests.testEnergyRequiresData' passed (0.0 seconds)
+Test Case 'LumaCoreTests.testExtraSleepDoesNotRepayOtherDays' started at 2026-11-10 20:16:54.203
+Test Case 'LumaCoreTests.testExtraSleepDoesNotRepayOtherDays' passed (0.002 seconds)
+Test Case 'LumaCoreTests.testFallDSTUsesElapsedTime' started at 2026-11-10 20:16:54.204
+Test Case 'LumaCoreTests.testFallDSTUsesElapsedTime' passed (0.101 seconds)
+Test Case 'LumaCoreTests.testFutureVersionRejected' started at 2026-11-10 20:16:54.305
+Test Case 'LumaCoreTests.testFutureVersionRejected' passed (0.0 seconds)
+Test Case 'LumaCoreTests.testInvalidRowsAreReportedAndNotImported' started at 2026-11-10 20:16:54.306
+Test Case 'LumaCoreTests.testInvalidRowsAreReportedAndNotImported' passed (0.0 seconds)
+Test Case 'LumaCoreTests.testJSONMatchesCSVExample' started at 2026-11-10 20:16:54.306
+Test Case 'LumaCoreTests.testJSONMatchesCSVExample' passed (0.002 seconds)
+Test Case 'LumaCoreTests.testMidnightAndUnknownGap' started at 2026-11-10 20:16:54.308
+Test Case 'LumaCoreTests.testMidnightAndUnknownGap' passed (0.001 seconds)
+Test Case 'LumaCoreTests.testMigrationFromV1' started at 2026-11-10 20:16:54.309
+Test Case 'LumaCoreTests.testMigrationFromV1' passed (0.101 seconds)
+Test Case 'LumaCoreTests.testMissingNightsRemainUnknown' started at 2026-11-10 20:16:54.410
+Test Case 'LumaCoreTests.testMissingNightsRemainUnknown' passed (0.002 seconds)
+Test Case 'LumaCoreTests.testNapsCountOnceInSleepDay' started at 2026-11-10 20:16:54.412
+Test Case 'LumaCoreTests.testNapsCountOnceInSleepDay' passed (0.002 seconds)
+Test Case 'LumaCoreTests.testOverlapNeverDoubleCounts' started at 2026-11-10 20:16:54.414
+Test Case 'LumaCoreTests.testOverlapNeverDoubleCounts' passed (0.001 seconds)
+Test Case 'LumaCoreTests.testPlannerAccountsForWindDownAndSettling' started at 2026-11-10 20:16:54.415
+Test Case 'LumaCoreTests.testPlannerAccountsForWindDownAndSettling' passed (0.0 seconds)
+Test Case 'LumaCoreTests.testRepeatImportAndRoundTrip' started at 2026-11-10 20:16:54.415
+Test Case 'LumaCoreTests.testRepeatImportAndRoundTrip' passed (0.002 seconds)
+Test Case 'LumaCoreTests.testSameSourceAwakeBeatsGenericAsleep' started at 2026-11-10 20:16:54.417
+Test Case 'LumaCoreTests.testSameSourceAwakeBeatsGenericAsleep' passed (0.001 seconds)
+Test Case 'LumaCoreTests.testSourcePriorityAndAwake' started at 2026-11-10 20:16:54.419
+Test Case 'LumaCoreTests.testSourcePriorityAndAwake' passed (0.001 seconds)
+Test Case 'LumaCoreTests.testSplitSleepAndOverlappingAwakenings' started at 2026-11-10 20:16:54.420
+Test Case 'LumaCoreTests.testSplitSleepAndOverlappingAwakenings' passed (0.002 seconds)
+Test Case 'LumaCoreTests.testSpringDSTUsesElapsedTime' started at 2026-11-10 20:16:54.422
+Test Case 'LumaCoreTests.testSpringDSTUsesElapsedTime' passed (0.001 seconds)
+Test Case 'LumaCoreTests.testTravelOffsets' started at 2026-11-10 20:16:54.423
+Test Case 'LumaCoreTests.testTravelOffsets' passed (0.001 seconds)
+Test Suite 'LumaCoreTests' passed at 2026-11-10 20:16:54.424
+	 Executed 28 tests, with 0 failures (0 unexpected) in 0.438 (0.438) seconds
+Test Suite 'RegressionTests' started at 2026-11-10 20:16:54.424
+Test Case 'RegressionTests.testBlankSourceIDRejectedBeforeNamespaceIsAdded' started at 2026-11-10 20:16:54.424
+Test Case 'RegressionTests.testBlankSourceIDRejectedBeforeNamespaceIsAdded' passed (0.001 seconds)
+Test Case 'RegressionTests.testBoundarySplitConservesElapsedTime' started at 2026-11-10 20:16:54.424
+Test Case 'RegressionTests.testBoundarySplitConservesElapsedTime' passed (0.001 seconds)
+Test Case 'RegressionTests.testDiaryRevisionUndoPreservesOriginalVersion' started at 2026-11-10 20:16:54.425
+Test Case 'RegressionTests.testDiaryRevisionUndoPreservesOriginalVersion' passed (0.001 seconds)
+Test Case 'RegressionTests.testDuplicateDiaryIDsRejected' started at 2026-11-10 20:16:54.427
+Test Case 'RegressionTests.testDuplicateDiaryIDsRejected' passed (0.001 seconds)
+Test Case 'RegressionTests.testDuplicateRevisionIDsRejected' started at 2026-11-10 20:16:54.428
+Test Case 'RegressionTests.testDuplicateRevisionIDsRejected' passed (0.001 seconds)
+Test Case 'RegressionTests.testEndedSessionCannotEndAgain' started at 2026-11-10 20:16:54.429
+Test Case 'RegressionTests.testEndedSessionCannotEndAgain' passed (0.001 seconds)
+Test Case 'RegressionTests.testInvalidBackupCannotOverwriteExistingSnapshot' started at 2026-11-10 20:16:54.430
+Test Case 'RegressionTests.testInvalidBackupCannotOverwriteExistingSnapshot' passed (0.0 seconds)
+Test Case 'RegressionTests.testMaliciousAudioPathRejected' started at 2026-11-10 20:16:54.430
+Test Case 'RegressionTests.testMaliciousAudioPathRejected' passed (0.0 seconds)
+Test Case 'RegressionTests.testNapOverlappingMainSleepNeverCountsTwice' started at 2026-11-10 20:16:54.430
+Test Case 'RegressionTests.testNapOverlappingMainSleepNeverCountsTwice' passed (0.001 seconds)
+Test Case 'RegressionTests.testRepeatedRowsWithinOneImportAreDeduplicated' started at 2026-11-10 20:16:54.431
+Test Case 'RegressionTests.testRepeatedRowsWithinOneImportAreDeduplicated' passed (0.001 seconds)
+Test Case 'RegressionTests.testReportingZoneChangeDoesNotChangeSourceInstants' started at 2026-11-10 20:16:54.433
+Test Case 'RegressionTests.testReportingZoneChangeDoesNotChangeSourceInstants' passed (0.002 seconds)
+Test Case 'RegressionTests.testUnconfirmedBedtimeDoesNotBecomeZeroSleepOrShortfall' started at 2026-11-10 20:16:54.434
+Test Case 'RegressionTests.testUnconfirmedBedtimeDoesNotBecomeZeroSleepOrShortfall' passed (0.001 seconds)
+Test Suite 'RegressionTests' passed at 2026-11-10 20:16:54.435
+	 Executed 12 tests, with 0 failures (0 unexpected) in 0.012 (0.012) seconds
+Test Suite 'debug.xctest' passed at 2026-11-10 20:16:54.436
+	 Executed 40 tests, with 0 failures (0 unexpected) in 0.45 (0.45) seconds
+Test Suite 'All tests' passed at 2026-11-10 20:16:54.436
+	 Executed 40 tests, with 0 failures (0 unexpected) in 0.45 (0.45) seconds
+◇ Test run started.
+↳ Testing Library Version: 6.2.1 (c9d57c83568b06d)
+↳ Target Platform: x86_64-unknown-linux-gnu
+✔ Test run with 0 tests in 0 suites passed after 0.001 seconds.

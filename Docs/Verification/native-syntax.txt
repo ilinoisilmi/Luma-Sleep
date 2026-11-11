@@ -1,0 +1,8 @@
+Swift compiler: 6.2.1, x86_64 Linux
+Date: 2026-11-10
+PASS: swiftc -frontend -parse App + Design + Features + Integrations + Core sources
+PASS: same parse with -D HEALTH_ENABLED
+PASS: widget and native UI-test source parse
+PASS: plutil -lint LumaSleep.xcodeproj/project.pbxproj
+
+These are syntax checks, not iOS SDK type checks or builds.

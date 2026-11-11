@@ -1,0 +1,19 @@
+$ bash -n Scripts/build_unsigned_ipa.sh
+Exit: 0
+
+$ python3 -m unittest discover -s Scripts -p test_package_ipa.py -v
+test_extension_build_rejected (test_package_ipa.PackagingTests.test_extension_build_rejected) ... ok
+test_payload_and_permissions (test_package_ipa.PackagingTests.test_payload_and_permissions) ... ok
+test_simulator_rejected (test_package_ipa.PackagingTests.test_simulator_rejected) ... ok
+test_source_instead_of_binary_rejected (test_package_ipa.PackagingTests.test_source_instead_of_binary_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.003s
+
+OK
+Created unsigned IPA: /tmp/tmpbqz272u4/export/test-only.ipa (542 bytes)
+Exit: 0
+
+PASS: workflow YAML, manual trigger, read-only permissions, hosted Mac, timeout, diagnostics and embedded Bash syntax.
+
+No GitHub workflow, Xcode build, real IPA, signing or device installation was run here.

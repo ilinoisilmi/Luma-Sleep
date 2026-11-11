@@ -1,0 +1,77 @@
+PASS: 76 structural checks
+PASS Required document exists: README.md
+PASS Required document exists: WINDOWS_START_HERE.md
+PASS Required document exists: ARCHITECTURE.md
+PASS Required document exists: ADDING_FEATURES.md
+PASS Required document exists: Docs/BUILD_AND_INSTALL.md
+PASS Required document exists: Docs/FEATURE_STATUS.md
+PASS Required document exists: Docs/DATA_FORMATS.md
+PASS Required document exists: Docs/DEVICE_TESTING.md
+PASS Required document exists: Docs/SOURCES.md
+PASS Required document exists: Docs/TEST_RESULTS.md
+PASS Valid plist: Widget-Info.plist
+PASS Valid plist: App-Info.plist
+PASS Valid plist: Basic.entitlements
+PASS Valid plist: Widget.entitlements
+PASS Valid plist: Health.entitlements
+PASS Valid plist: PrivacyInfo.xcprivacy
+PASS Purpose string: NSMicrophoneUsageDescription
+PASS Purpose string: NSMotionUsageDescription
+PASS Purpose string: NSHealthShareUsageDescription
+PASS Purpose string: NSAlarmKitUsageDescription
+PASS Health write permission is not requested
+PASS Background mode is audio only
+PASS SwiftUI single-window scene manifest
+PASS Basic has no custom entitlements
+PASS Health entitlement enabled only for optional scheme
+PASS App Group strings match
+PASS Deployment target is iOS 17
+PASS Xcode project regeneration is deterministic and current
+PASS Xcode includes App/LumaSleepApp.swift
+PASS Xcode includes App/AppStore.swift
+PASS Xcode includes App/Integrations/AudioMonitor.swift
+PASS Xcode includes App/Integrations/Reminders.swift
+PASS Xcode includes App/Integrations/Shortcuts.swift
+PASS Xcode includes App/Integrations/MotionImporter.swift
+PASS Xcode includes App/Integrations/HealthImporter.swift
+PASS Xcode includes App/Integrations/WakeAlarmService.swift
+PASS Xcode includes App/Design/DesignSystem.swift
+PASS Xcode includes App/Features/SettingsView.swift
+PASS Xcode includes App/Features/IntegrationViews.swift
+PASS Xcode includes App/Features/PlanningView.swift
+PASS Xcode includes App/Features/OnboardingView.swift
+PASS Xcode includes App/Features/DiaryEditor.swift
+PASS Xcode includes App/Features/TodayView.swift
+PASS Xcode includes App/Features/HistoryView.swift
+PASS Xcode includes App/Features/TrackView.swift
+PASS Xcode includes App/Features/InsightsView.swift
+PASS Xcode includes App/Features/DataManagementView.swift
+PASS Xcode includes Core/Sources/LumaCore/ImportExport.swift
+PASS Xcode includes Core/Sources/LumaCore/Persistence.swift
+PASS Xcode includes Core/Sources/LumaCore/DemoData.swift
+PASS Xcode includes Core/Sources/LumaCore/Insights.swift
+PASS Xcode includes Core/Sources/LumaCore/Reconciliation.swift
+PASS Xcode includes Core/Sources/LumaCore/Models.swift
+PASS Scheme references LumaBasic
+PASS Scheme references LumaHealth
+PASS Asset exists: LumaMark.png
+PASS Asset exists: Icon-20@2x.png
+PASS Asset exists: Icon-20@3x.png
+PASS Asset exists: Icon-29@2x.png
+PASS Asset exists: Icon-29@3x.png
+PASS Asset exists: Icon-40@2x.png
+PASS Asset exists: Icon-40@3x.png
+PASS Asset exists: Icon-60@2x.png
+PASS Asset exists: Icon-60@3x.png
+PASS Asset exists: Icon-1024@1x.png
+PASS Valid example JSON: one-rejected-row.json
+PASS Valid example JSON: migration-v1.json
+PASS Valid example JSON: sleep-log.json
+PASS Local doc link resolves: WINDOWS_START_HERE.md -> Docs/DEVICE_TESTING.md
+PASS Local doc link resolves: WINDOWS_START_HERE.md -> Docs/BUILD_AND_INSTALL.md
+PASS Local doc link resolves: README.md -> WINDOWS_START_HERE.md
+PASS Local doc link resolves: README.md -> Docs/BUILD_AND_INSTALL.md
+PASS Local doc link resolves: README.md -> Docs/FEATURE_STATUS.md
+PASS Local doc link resolves: README.md -> ARCHITECTURE.md
+PASS Local doc link resolves: README.md -> ADDING_FEATURES.md
+PASS Local doc link resolves: BUILD_AND_INSTALL.md -> ../WINDOWS_START_HERE.md
